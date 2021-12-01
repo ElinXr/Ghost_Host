@@ -1,0 +1,383 @@
+@import url("https://use.fontawesome.com/releases/v5.15.3/css/all.css");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap");
+
+body {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+p,
+a,
+span {
+  font-family: "Comic Sans", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Montserrat", sans-serif;
+}
+.dropbtn-home {
+  cursor: pointer;
+  font-size: 16px;  
+   font-weight: bold;
+  border: none;
+  outline: none;
+  color: orange;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+  }
+
+.dropbtn {
+  cursor: pointer;
+  font-size: 16px;  
+   font-weight: bold;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+  }
+
+.nav {
+  color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 90px;
+}
+
+.nav-logo {
+  width: 150px;
+}
+
+.nav-logo img {
+  width: 100%;
+}
+
+.nav-list-items {
+  list-style: none;
+  list-style-type: none;
+    display: flex;
+  }
+
+.nav-list-item {
+    margin: 0 12px;
+  list-style: none;
+}
+
+
+.nav-list-item a {
+  display: inline-block;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+.button{
+  background-color: orange; 
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+
+}
+.menu
+{
+  margin: 0px;
+  height: 70px;
+  background-color: rgb(48,48,48);
+}
+.menu-list-items {
+  display: flex;
+  align-items: center;
+}
+
+.menu-list-item {
+  margin: 0 12px;
+  list-style: none;
+}
+
+.menu-list-item a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+.header-trainers {
+  background-image: url("banner1.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  padding: 80px 0;
+}
+
+.header-trainers-title {
+  color: white;
+  font-size: 30px;
+}
+
+.header-trainers-text {
+  color: white;
+  max-width: 40%;
+  margin: 20px auto;
+}
+
+.main-trainers {
+  padding: 50px 80px;
+  display: flex;
+  align-items: center;
+}
+
+.main-trainer {
+  display: flex;
+  align-items: flex-start;
+}
+
+.main-trainer:nth-child(1) {
+  margin-right: 30px;
+}
+
+.main3-trainer-img {
+  margin-right: 30px;
+  min-width: 180px;
+}
+
+.main-list-items
+{
+  list-style-type: none;
+}
+
+.main-trainer-img img {
+  width: 95%;
+}
+
+.main-trainer-content-title {
+  color: black;
+  margin-left: 40px;
+  margin-bottom: 10px;
+  margin-top: 0;
+}
+
+.main-trainer-content-job {
+  color: gray;
+  margin-left: 40px;
+  margin-bottom: 10px;
+  font-size: 13px;
+}
+.main-trainer-content-item
+{
+  color:gray;
+  margin-bottom: 0;
+}
+.main-trainer-content-text {
+  color: grey;
+  line-height: 22px;
+}
+
+.all-trainers {
+  padding: 100px 80px 40px 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.all-trainers .main-trainer-img {
+  margin-right: 0;
+}
+
+.all-trainers .main-trainer-img img {
+  object-fit: cover;
+  width: 192px;
+  height: 192px;
+}
+
+.all-trainers-trainer {
+  margin: 0 15px;
+}
+
+.all-trainers-content {
+  margin-top: 20px;
+}
+
+.kids-team {
+  background: black;
+  padding: 100px 200px;
+  text-align: center;
+  color: white;
+  border-top: 8px solid #b4e2ff;
+}
+.bottom-list-items{
+  list-style-type: none;
+  padding: 100px 80px 40px 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.bottom-list-item{
+  max-width: 25%;
+
+  margin: 0 10px 30px auto;
+}
+
+
+.bottom-list-item-body{
+    font-weight: none;
+  color: gray;
+}
+.bottom-list-item-title{
+    font-weight: bold;
+  color: white;
+}
+.bottom-list-items li::before{
+  content: &#8739;
+}
+
+.bottom-col-list-social-media
+{
+  list-style-type: none;
+  display: inline-block;
+  align-items: center;
+  list-style: none;
+  margin: 8px 0;
+}
+.bottom-col-list-social-media li 
+{
+  color: orange;
+    margin: 10px;
+    float: left;
+}
+.bottom-list-services
+{
+  margin: 20px 20px 20px 20px;
+  list-style-type: none;
+  color: gray;
+}
+.bottom-list-services-item li
+{
+  padding: 100px;
+  margin: 20px 20px 20px 20px;
+}
+.bottom-list-services-item a{
+  color: gray;
+}
+.kids-team-title {
+  font-size: 30px;
+}
+
+.kids-team-subtitle {
+  max-width: 50%;
+  margin: 0 auto 30px auto;
+}
+
+.kids-team-form input {
+  border: 1px solid white;
+  border-radius: 4px;
+  padding: 10px;
+  background: transparent;
+}
+
+.kids-team-form label {
+    margin-right: 14px;
+}
+
+.kids-team-form input::placeholder {
+  color: white;
+}
+
+.kids-team-form .submit-btn {
+  background: #ff8b00;
+  color: white;
+  border-radius: 20px;
+  margin-left: 30px;
+  box-shadow: 0px 0px 1px 1px grey;
+  text-transform: uppercase;
+  font-weight: bold;
+  border: none;
+  padding: 12px 26px;
+}
+
+footer {
+  background: orange;
+  padding: 10px 80px;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+}
+.footer-title{
+  color: black
+}
+.footer-col-list {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.footer-col-list li {
+  float: left;
+  list-style: none;
+  margin: 8px 10px 10px 10px;
+}
+
+.footer-col-list li a {
+  text-decoration: none;
+  color: black;
+}
+
+footer .social-media {
+  display: flex;
+}
+
+footer .social-media i {
+  font-size: 25px;
+}
+
+footer .social-media i:nth-child(1) {
+  margin-right: 12px;
+}
+.dropbtn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #3e8e41;}

@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ghost Host</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      
+	  
+            <section class = "menu">
+         
+				 <article style="float:left" class="nav-logo">
+				  
+				 <img src="logo.png" alt="Gosht Host" />
+				  
+				  </article>
+				  
+				  <ul class="menu-list-items"> 
+		 <li style="float:right" class="menu-list-item">
+            <a href="#">
+			
+              <button class="dropbtn" onclick="myFunction()">
+               Home 
+             <i class="fa fa-caret-down"> </i>
+            </button>
+            </a>
+          </li>
+          <li style="float:right" class="menu-list-item">
+            <a href="#">
+              <button class="dropbtn" onclick="myFunction()">
+               Domain
+              <i class="fa fa-caret-down"> </i>
+            </button>
+            </a>
+          </li>
+		 
+          <li style="float:right" class="menu-list-item">
+            <a href="#">
+            <button class="dropbtn" onclick="myFunction()">
+               Hosting
+              <i class="fa fa-caret-down"> </i>
+            </button>
+            </a>
+          </li>
+              <li style="float:right" class="menu-list-item">
+            <a href="#">
+              <button class="dropbtn" onclick="myFunction()">
+               Clients
+              <i class="fa fa-caret-down"> </i>
+            </button>
+          </li>
+              <li style="float:right" class="menu-list-item">
+            <a href="#">
+              <button class="dropbtn" onclick="myFunction()">
+               Blog
+              <i class="fa fa-caret-down"> </i>
+            </button>
+            </a>
+          </li>
+              <li style="float:right" class="menu-list-item">
+            <a href="#">
+            <button class="dropbtn" onclick="myFunction()">
+             Support
+              <i class="fa fa-caret-down"> </i>
+            </button>
+            </a>
+          </li>
+              
+        </ul>  
+      </section>
+	  
+      <section class="header-trainers">
+        <h1 class="header-trainers-title">HELLO!</h1>
+        <p class="header-trainers-text">
+          We love our work...<br>
+		  And We`re taking it seriosly...
+        </p>
+      </section>
+    </header>
+	<div class="LcenterPanel">
+	
+        <p> LOGIN</p>
+		
+        </div>
+		<div class="RcenterPanel">
+            <p>REGISTER</p>
+        </div>
+		<br>
+    <main>
+      
+		
+	
+	
+	  <div class="LmenuAU">
+	  
+	  <h4>ABOUT US</h4>
+	  <p>
+	  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac ex sed ex scelerisque pharetra. Nullam nunc leo,
+	  interdum id metus et, rutrum cursus nisi. Proin varius scelerisque consequat. Proin maximus, lacus sed vestibulum laoreet,
+	  tortor diam dapibus tellus, in mollis leo ligula vitae purus. Donec aliquam nunc ex, et vestibulum lacus lobortis vel.
+	  Curabitur elementum erat sed augue eleifend condimentum. Praesent vestibulum nulla lacus, varius semper massa facilisis id.
+	  </p>
+	  
+	  </div>
+	  <div class="RmenuAU">
+	  <table>
+	  <tr>
+	  <td>
+	  
+	  <img src="team-1.png" alt="Avatar" class="avatar1"></br>
+	  
+	  Jhon Doe<br>
+	<p> designer</p>
+	</td>
+
+	<td>
+	  
+	  <img src="team-2.png" alt="Avatar" class="avatar1"></br>
+	  Jhonny Doe</br>
+	<p> designer</p>
+	</td>
+	<td>
+	  
+	  <img src="team-3.png" alt="Avatar" class="avatar1"></br>
+	  Jhonatan Doe</br>
+	  <p> designer</p>
+	</td>
+	</tr>
+	</table>
+	 </div>
+	 <br></br>
+	 
+	 
+	 <div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  
+  <img src="photo1.jpg" style="width:100%">
+  <div class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="office2.jpg" style="width:100%">
+  <div class="text">Lorem ipsum dolor sit amet!</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="office3.jpg" style="width:100%">
+  <div class="text">Consectetur adipisicing elit.</div>
+</div>
+	  
+	  <div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+var myIndex = 0;
+carousel();
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 5000); // Change image every 2 seconds
+}
+	  </script>
+	  <br></br>
+	  
+	  
+	  <div class="tablePlace">
+	  <table>
+	  
+			  <td>
+			  <img src="tunder.jpg" alt="tunder" class="Tpic"></br>
+			  <b>Fast Service</b>
+			  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+			  </td>
+			  
+			  <td>
+			  <img src="cloud.jpg" alt="cloud" class="Tpic"></br>
+			  <b>Cloud Service</b>
+			  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+			  </td>
+			  
+			  <td>
+			  <img src="navigation.png" alt="navigation" class="Tpic"></br>
+			  <b>Domain Transfer</b>
+			  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+			  </td>
+			  
+			  <td>
+			  <img src="message.jpg" alt="message" class="Tpic"></br>
+			  <b>Live Suport</b>
+			  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+			  </td>
+	  
+	  </table>
+	  </div>
+	  
+		
+     
+      <section class="kids-team">
+        <ul class="bottom-list-items">
+          <li class="bottom-list-item">
+            <a>
+              <a style="color:green;">&#8739;</a>
+            <p class = "bottom-list-item-title">ABOUT US</p>
+          <img src="logo.png" alt="" />
+            <p class = "bottom-list-item-body">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+			  sed do eiusmod tempor inci done idunt ut labore et dolore magna aliqua.
+            </p>
+            <ul class="bottom-col-list-social-media">
+          <li>
+            <a href="#"><i style="color:green;" class="fab fa-facebook-f"></i></a>
+          </li>
+          <li>
+            <a href="#"><i style="color:green;" class="fab fa-instagram"></i> </a>
+          </li>
+             <li>
+            <a href="#"><i style="color:green;" class="fab fa-twitter"></i> </a>
+          </li>
+             <li>
+            <a href="#"><i style="color:green;" class="fab fa-github"></i> </a>
+          </li>
+
+        </ul>
+            </a>
+          </li>
+          <li class="bottom-list-item">
+            <a>
+              <a style="color:green;">&#8739;</a>
+             <p  class = "bottom-list-item-title">Working hours</p>
+              <p class = "bottom-list-item-body">We work 7 days a week, every day excluding major holidays. 
+			  Contact us if you have an emergency, with our Hotline and Contact form.</p>
+
+              <p class = "bottom-list-item-body">
+              Monday - Friday:10:00 - 16:00
+            </p>
+              <p class = "bottom-list-item-body">
+             Saturday:12:00 - 15:00
+            </p>
+              <p class = "bottom-list-item-body">
+              Sunday and holidays:09:00 - 12:00
+            </p>
+              
+              
+            </p>
+            </a>
+          </li>
+           <li class="bottom-list-item">
+            <a>
+              <a style="color:green;">&#8739;</a>
+             <p class = "bottom-list-item-title">SERVICES</p>
+             <ul class="bottom-list-services">
+               <li class="bottom-list-services-item">
+                <a href="">
+                  Pre-Construction
+                </a> 
+               </li>
+               <li class="bottom-list-services-item">
+                <a href="">
+                  General Contracting
+                </a> 
+               </li>
+               <li class="bottom-list-services-item">
+                <a href="">
+                  Construction Management
+                </a> 
+               </li>
+               <li class="bottom-list-services-item">
+                <a href="">
+                  Design and Build
+                </a> 
+               </li>
+               <li class="bottom-list-services-item">
+                <a href="">
+                  Self-Perform Construction
+                </a> 
+               </li>
+             </ul>
+            </a>
+          </li>
+        </ul>
+      </section>
+    </main>
+    
+  </body>
+</html>
